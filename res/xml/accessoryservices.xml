@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+	<application name="FitMyStyle">
+		<serviceProfile id="/system/sapcolorswitcher"
+			name="colorswitcher"
+			role="provider"
+			version="1.0">
+			<supportedTransports>
+				<transport type="TRANSPORT_BT" />
+				<transport type="TRANSPORT_WIFI" />
+			</supportedTransports>
+			<serviceChannel 
+				id="110"
+				dataRate="low" 
+				priority="low"
+				reliability="disable">
+			</serviceChannel>
+		</serviceProfile>
+	</application>
+</resources>
