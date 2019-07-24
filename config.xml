@@ -1,19 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<widget xmlns="http://www.w3.org/ns/widgets" xmlns:tizen="http://tizen.org/ns/widgets" id="http://yourdomain/SRIBWatch" version="1.1.24" viewmodes="maximized">
-    <tizen:application id="2em7wsm323.SRIBWatch" package="2em7wsm323" required_version="2.3.1"/>
-    <tizen:category name="http://tizen.org/category/wearable_clock"/>
+<widget xmlns:tizen="http://tizen.org/ns/widgets" xmlns="http://www.w3.org/ns/widgets" id="http://yourdomain/BasicUI" version="1.0.0" viewmodes="maximized">
+    <tizen:application id="QOcBDI2gVl.BasicUI" package="QOcBDI2gVl" required_version="4.0"/>
     <content src="index.html"/>
     <feature name="http://tizen.org/feature/screen.size.all"/>
     <icon src="icon.png"/>
-    <tizen:metadata key="AccessoryServicesLocation" value="res/xml/accessoryservices.xml"/>
-    <tizen:metadata key="master_app_name" value="My Gear My Style Companion"/>
-    <tizen:metadata key="master_app_packagename" value="com.samsung.mygearmystyle"/>
-    <tizen:metadata key="master_app_samsungapps_deeplink" value="samsungapps://ProductDetail/com.samsung.mygearmystyle"/>
-    <tizen:metadata key="master_app_playstore_deeplink" value="market://details?id=com.samsung.mygearmystyle"/>
-    <tizen:metadata key="master_app_auto_uninstallation" value="yes"/>
-    <name>My Gear My Style</name>
+    <name>BasicUI</name>
+    <tizen:privilege name="http://tizen.org/privilege/volume.set"/>
+    <tizen:privilege name="http://tizen.org/privilege/application.launch"/>
+    <tizen:privilege name="http://tizen.org/privilege/internet"/>
+    <tizen:privilege name="http://tizen.org/privilege/recorder"/>
+    <tizen:privilege name="http://developer.samsung.com/tizen/privilege/logmanager"/>
+    <tizen:privilege name="http://tizen.org/privilege/appdir.shareddata"/>
+    <tizen:privilege name="http://tizen.org/privilege/network.get"/>
+    <tizen:privilege name="http://tizen.org/privilege/appmanager.launch"/>
+    <tizen:privilege name="http://tizen.org/privilege/location"/>
+    <tizen:privilege name="http://tizen.org/privilege/haptic"/>
+    <tizen:privilege name="http://tizen.org/privilege/display"/>
     <tizen:privilege name="http://developer.samsung.com/tizen/privilege/accessoryprotocol"/>
-    <tizen:privilege name="http://tizen.org/privilege/power"/>
+    <tizen:privilege name="http://developer.samsung.com/tizen/privilege/hostbrowser.launch"/>
     <tizen:profile name="wearable"/>
-    <tizen:setting background-support="disable" encryption="disable" hwkey-event="enable"/>
 </widget>
