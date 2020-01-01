@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width,user-scalable=no">
+	<title>Circular UI</title>
+	<link rel="stylesheet" href="lib/tau/wearable/theme/default/tau.min.css">
+	<link rel="stylesheet" media="all and (-tizen-geometric-shape: circle)" href="lib/tau/wearable/theme/default/tau.circle.min.css">
+	<!-- load theme file for your application -->
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	
+	<div class="ui-page ui-page-active" id="main">
+		<div class="ui-content">
+		
+			<div id="dvtutorial" class="tutorial"></div>
+			<div class='dvBack' id= 'dvBack'>
+			
+			
+			<p id="para" style="position:absolute;text-align:right; width:58%;z-index:2; color:black; ; left:14%;top:10%;font-size:28px ; font-weight: bold;"> 0 </p>
+			<div class="resultView">
+					
+			</div>
+			<button id = 'btnDel' class="backapace"></button>
+			
+		 	<!--   <canvas id = 'canvas' class="resultView">0</canvas>
+			 -->
+			
+			<div style="position: absolute; top: 38%;left:12%; width:93%;height: 60%;">
+				<button id = "btn0" class="number">0</button>
+				<button id = "btn7" class="number">7</button>
+				<button id = "btn8" class="number">8</button>
+				<button id = "btn9" class="number">9</button>
+				<button id = "btnC" class="number" style="background-color: white;  font-size:larger ; color: #c45a44;">c</button>
+				<button id = "btnDot" class="number">.</button>
+				<button id = "btn4" class="number">4</button>
+				<button id = "btn5" class="number">5</button>
+				<button id = "btn6" class="number">6</button>
+				<button id = "btnEq" class="number" style="background-color: #c45a44">=</button>
+				<button id = "btn1" class="number">1</button>
+				<button id = "btn2" class="number">2</button>
+				<button id = "btn3" class="number">3</button>
+			</div>
+			
+			<div id= 'dvUnderSwipe' class= 'dvUnderSwipe'></div>
+			<div id = 'pointer' class='pointer'>
+					<img src="more.png">
+			</div>
+			<div id="dvSwipe" class = "dvSwipe">
+					<button id="btnPercentage" class="op" style=" top: 14%; left: 15%;font-size: 20px;">%</button>
+					<button id = "btnAdd" class='op' style="top: 23%; left: 32%;">+</button>
+					<button id = "btnSub" class='op' style="top: 5%; left: 32%;">-</button>
+					<button id = "btnDiv" class='op' style="top: 5%; left: 51%;">÷</button>
+					<button id = "btnMul" class='op' style="top: 23%; left: 51%;font-size: 25px;">x</button>
+					<button id = "btnMod"  class='op' style="top: 14%; left: 68%;font-size: 15px; font-weight: bold;">MOD</button>				
+			</div>
+		</div>
+		</div>
+	</div>
+	<!--  div class="ui-page ui-page-active" id="main"-->
+	<script type="text/javascript" src="lib/tau/wearable/js/jquery.js"></script>
+	<script type="text/javascript" src="lib/tau/wearable/js/tau.js"></script>
+	
+	
+	<script src="js/Calculator.js"></script>
+    <script src="js/Seg_7.js"></script>
+    <script src="js/prRes.js"></script>
+    <script src="js/app.js"></script>
+	<script src="lowBatteryCheck.js"></script>
+	
+</body>
+</html>
