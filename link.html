@@ -21,14 +21,26 @@
 
 	    <p> <a href="index.html"> Index page </a> </p>
 	    <p> <a href="https://www.google.com/"> Google page </a> </p>
-	    <p> <a href="https://www.google.com/" target="_blank" > Google with new tab page </a> </p>
+	    <p> <a href="https://www.google.com/" target="_blank"> Google with new tab page </a> </p>
 
-	    <a href="https://about.twitter.com" target="_blank" dir="auto" role="link" data-focusable="true" class="css-4rbku5 css-18t94o4 css-901oao r-1re7ezh r-1loqt21 r-1qd0xha r-n6v787 r-16dba41 r-1sf4r6n r-jw8lkh r-bcqeeo r-ry3cjt r-qvutc0" rel=" noopener noreferrer"><p class="css-901oao css-16my406 r-1qd0xha r-ad9z0x r-bcqeeo r-qvutc0">About Twitter</p></a>
+		<a href="https://about.twitter.com" target="_blank" dir="auto" role="link" data-focusable="true" class="css-4rbku5 css-18t94o4 css-901oao r-1re7ezh r-1loqt21 r-1qd0xha r-n6v787 r-16dba41 r-1sf4r6n r-jw8lkh r-bcqeeo r-ry3cjt r-qvutc0" rel=" noopener noreferrer"><p class="css-901oao css-16my406 r-1qd0xha r-ad9z0x r-bcqeeo r-qvutc0">About Twitter</p></a>
 
 	    <!-- <p id="div"> click me </p> -->
 	    <p> afsdddd ddddfasd </p>
 	    <p id="demo"></p>
     </div>
+
+    <script type="text/javascript">
+    	
+		var elements = document.getElementsByTagName('a');
+		for(var i = 0, len = elements.length; i < len; i++) {
+		    elements[i].onclick = function () {
+		    	console.log("link clicked");
+		        // stuff
+		    }
+		}
+
+    </script>
 
 </body>
 </html>
